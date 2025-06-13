@@ -5,4 +5,8 @@ class ArticlesController < ApplicationController
     # Instance variable with @ to make it available to the application and also use it in view
     @article = Article.find(params[:id])
   end
+  def index
+    # Follow the convection. The appropriate variable name
+    @articles = Article.all
+  end
 end
