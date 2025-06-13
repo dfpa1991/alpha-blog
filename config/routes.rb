@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   root "pages#index"
   get "about" => "pages#about"
   # Resources for the articles
-  resources :articles, only: [ :show, :index ]
+  resources :articles, only: [ :show, :index, :new, :create ]
 end
