@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   root "pages#index"
   get "about" => "pages#about"
   # Resources for the articles
-  resources :articles, only: [ :show, :index, :new, :create ]
+  resources :articles # only: [ :show, :index, :new, :create, :edit, :update, :destroy ] <- articles: Expose all the REST-ful routes
 end
